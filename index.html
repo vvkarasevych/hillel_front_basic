@@ -3,24 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Registration</title>
+
+    <style>
+    header {display: flex; flex-direction: column; align-items: center; gap: 16px;}
+    h1 {font-size: 20px;}
+    main {display: flex; flex-direction: column; align-items: center; gap: 16px;}
+    div {width: 500px; height: 656px;  display: flex; flex-direction: column; align-items: center;}
+    label {display: flex; flex-direction: column; align-items: center; gap: 16px;}
+    footer {background: #46A358; width: 500px; height: 10px;}
+    </style>
+
 </head>
 <body>
-    <img src="./img/300index.jpg" alt="just a picture" style="border: solid 1px">
-    <h1>Lorem ipsum.</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, consequatur!</p>
+    <div>
+
+        <button style="float: right;">
+           X
+        </button>
+
+    <header>
+        <h1><span style="color: #3D3D3D";> Login | </span><span style="color: #46A358";>Register</span></h1>
+    </header>
+
     <main>
-        <h2>Just Text</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, nostrum!</p>
-        <h2>Just Text but the second tag H2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium delectus maxime culpa eos itaque!</p>
+        <span style="color: #3D3D3D; font-size: 13px;">Enter your email and password to register.</span>
+
+        <form action="">
+        <label for="">
+            <input type="text" placeholder="Username">
+            <input type="email" placeholder="Enter your email address">
+            <input type="password" placeholder="Password">
+            <input type="password" placeholder="Confirm Password">
+        </label>
+        </form>
+
+        <button style="border-radius: 5px; background: #46A358; padding: 16px 118px 13px 119px;">
+            Register
+        </button>
+
+        Or register with
+
+        <button id="Google" style="border-radius: 5px; ">
+            Continue with Google
+        </button>
+
+        <button id="Facebook" style="border-radius: 5px; ">
+            Continue with Facebook
+        </button>
+
     </main>
-    <nav>
-        <p>
-            <a href="./about.html">go to About page</a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="./new.html">go to Another page</a>
-        </p>
-    </nav>
+
+    <footer></footer>
+
+    </div>
 </body>
 </html>
