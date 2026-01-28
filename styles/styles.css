@@ -1,3 +1,4 @@
+   
     header {
         display: flex; 
         flex-direction: column; 
@@ -31,8 +32,48 @@
         gap: 16px;
     }
 
+    p {
+        color: #3D3D3D;
+        font-size: 13px;
+    }
+
+    input, .register, .google, .facebook {
+        border-radius: 5px;
+    }
+
+    input, .google, .facebook {  
+        width: 300px;
+        height: 40px;
+    }
+
+    .register {
+        width: 300px;
+        height: 45px;
+    }
+
     footer {
+        margin-top: 40px;
         background: #46A358; 
         width: 500px; 
         height: 10px;
     }
+
+    /*
+
+    *{} - не имеет веса = 00000
+Для всех элементов. Как правило, чтобы обнулить какие-то дефолтные стили браузера.
+
+Селекторы тэга p, селекторы псевдоэлементов ::placeholder - вес - 00001
+
+селектор класса .class, селектор псевдокласса :hover, селектор аттрибута [type = 'text'] - вес = 00010
+
+селектор айди #id - вес = 00100"
+Но айди в основном используются для взаимодействия с JavaScript.
+Через CSS - лучше не использовать.
+
+style attribute - указывется непосредственно на тэге - вес = 01000
+
+Правило !important - вес = 10000
+Много проблем с данным правилом. Не использовать.
+    
+    */
