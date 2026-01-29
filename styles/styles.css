@@ -8,6 +8,7 @@
 
     h1 {
         font-size: 20px;
+        color: #3D3D3D;
     }
 
     main {
@@ -37,6 +38,10 @@
         font-size: 13px;
     }
 
+    span {
+        color: #3D3D3D; 
+    }
+
     input, .register, .google, .facebook {
         border-radius: 5px;
     }
@@ -49,6 +54,16 @@
     .register {
         width: 300px;
         height: 45px;
+        background: #46A358;
+    }
+
+    .textline_enter {
+        font-size: 13px; 
+        margin-top: 40px;
+    }
+
+    .registercolor {
+        color: #46A358;
     }
 
     footer {
