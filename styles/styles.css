@@ -1,4 +1,48 @@
+   /*
+
+Thin       - 100
+ExtraLight - 200
+Light      - 300
+Regular    - 400
+Medium     - 500
+SemiBold   - 600
+Bold       - 700
+ExtraBold  - 800
+Black      - 900
+
+   */
    
+   
+   @font-face {
+        font-family: 'Cera Pro Regular';
+        src: url('../fonts/CeraPro-Regular.eot');
+        src: local('CeraPro-Regular'), local('CeraPro-Regular'),
+            url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/CeraPro-Regular.woff2') format('woff2'),
+            url('../fonts/CeraPro-Regular.woff') format('woff'),
+            url('../fonts/CeraPro-Regular.ttf') format('truetype');
+   }
+
+    @font-face {
+        font-family: 'Cera Pro Medium';
+        src: url('../fonts/CeraPro-Medium.eot');
+        src: local('CeraPro-Medium'), local('CeraPro-Medium'),
+            url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/CeraPro-Medium.woff2') format('woff2'),
+            url('../fonts/CeraPro-Medium.woff') format('woff'),
+            url('../fonts/CeraPro-Medium.ttf') format('truetype');
+   }
+
+       @font-face {
+        font-family: 'Cera Pro Bold';
+        src: url('../fonts/CeraPro-Bold.eot');
+        src: local('CeraPro-Bold'), local('CeraPro-Bold'),
+            url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/CeraPro-Bold.woff2') format('woff2'),
+            url('../fonts/CeraPro-Bold.woff') format('woff'),
+            url('../fonts/CeraPro-Bold.ttf') format('truetype');
+   }
+    
     header {
         display: flex; 
         flex-direction: column; 
@@ -9,6 +53,7 @@
     h1 {
         font-size: 20px;
         color: #3D3D3D;
+        font-family: 'Cera Pro Regular', sans-serif;
     }
 
     main {
