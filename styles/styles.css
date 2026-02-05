@@ -11,7 +11,7 @@ ExtraBold  - 800
 Black      - 900
 
    */
-   
+
    
    @font-face {
         font-family: 'Cera Pro Regular';
@@ -42,7 +42,35 @@ Black      - 900
             url('../fonts/CeraPro-Bold.woff') format('woff'),
             url('../fonts/CeraPro-Bold.ttf') format('truetype');
    }
+
+   body{
+    display: flex;
+   }
+
+   button{
+    margin-top: 13px;
+    margin-right: 13px;
+    padding: 3px;
+    background: #FFF;
+    border: none;
+    align-self: flex-end;
+   }
+
+   .textline_enter{
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 13px;
+        align-self: flex-start;
+    }
+
+    input::placeholder{
+        color: #A5A5A5;
+        font-family: "Cera Pro Regular";
+        font-size: 14px;
+        padding: 12px 14px;
+    }
     
+
     header {
         display: flex; 
         flex-direction: column; 
@@ -63,7 +91,7 @@ Black      - 900
         gap: 16px;
     }
 
-    div {
+    div.container {
         width: 500px; 
         height: 656px;  
         display: flex; 
@@ -81,6 +109,8 @@ Black      - 900
     p {
         color: #3D3D3D;
         font-size: 13px;
+        font-family: "Cera Pro Regular";
+        align-self: center;
     }
 
     span {
@@ -89,6 +119,14 @@ Black      - 900
 
     input, .register, .google, .facebook {
         border-radius: 5px;
+        border: 1px solid #EAEAEA;
+    }
+
+    .google, .facebook{
+        color: #727272;
+        text-align: center;
+        font-family: "Cera Pro Bold";
+        font-size: 13px;
     }
 
     input, .google, .facebook {  
@@ -96,10 +134,32 @@ Black      - 900
         height: 40px;
     }
 
+    div.for-line{
+        display: flex;
+        flex-direction: column;
+    }
+
+    p.p-register{
+        background-color: #FFF;
+        padding: 0px 6px;
+    }
+
+    div.line{
+        border-bottom: 1px solid #EAEAEA;
+        width: 300px;
+        margin-top: -6px;
+        position: relative;
+        z-index: -1;
+    }
+
     .register {
         width: 300px;
         height: 45px;
         background: #46A358;
+        color: #FFF;
+        font-family: "Cera Pro Regular";
+        font-size: 16px;
+        padding: 14px 118px;
     }
 
     .textline_enter {
