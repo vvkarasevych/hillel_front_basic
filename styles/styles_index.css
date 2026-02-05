@@ -95,6 +95,7 @@ Black      - 900
         gap: 4px;
         color: #FFFFFF;
         font-family: "Cera Pro Regular";
+        border: none;
     }
 
     main.main{
@@ -104,6 +105,10 @@ Black      - 900
         align-items: start;
     }
 
+    .div-text{
+        padding: 70px 100px 85px 40px;
+    }
+
     p.p-welcome{
         color: #3D3D3D;
         font-family: "Cera Pro Regular";
@@ -111,7 +116,6 @@ Black      - 900
         letter-spacing: 1.4px;
         text-transform: uppercase;
         margin-top: 70px;
-        margin-left: 40px;
     }
 
     h1{
@@ -121,7 +125,6 @@ Black      - 900
         line-height: 70px;
         text-transform: uppercase;
         margin-top: 7px;
-        margin-left: 40px;
     }
 
     span.span-greenword{
@@ -134,11 +137,11 @@ Black      - 900
         font-size: 14px;
         line-height: 24px;
         margin-top: 7px;
-        margin-left: 40px;
     }
 
     button.shop-button{
         border-radius: 6px;
+        border: none;
         background: #46A358;
         padding: 10px 27px;
         color: #FFF;
@@ -147,7 +150,6 @@ Black      - 900
         line-height: 20px;
         text-transform: uppercase;
         margin-top: 40px;
-        margin-left: 40px;
     }
 
     .div-pictures{
