@@ -55,9 +55,10 @@ Black      - 900
 
    
     div.container{
-        padding: 30px 120px 52px;
+        padding: 30px 120px 20px;
         display: flex;
         flex-direction: column;
+        background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
     }
 
     header.header{
@@ -160,4 +161,152 @@ Black      - 900
         z-index: 1;
         bottom: 0;
         left: 0;
+    }
+
+/*    
+Homework 7.float on Figma
+*/
+
+    div.page{
+        padding: 20px 120px 20px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    h2{
+        color: #3D3D3D;
+        font-family: "Cera Pro Bold";
+        font-size: 18px;
+        margin: 14px 200px 0px 18px;
+    }
+
+    div.checkbox-menu{
+        margin: 10px 24px 30px 30px;
+    }
+
+    /*
+    CSS for custom chechboxes
+    */
+    .custom-checkbox{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .custom-checkbox input{
+        display: none;
+    }
+
+    div.checkbox-menu span{
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 15px;
+        padding: 10px 0px 10px 0px;
+    }
+
+    .custom-checkbox input:checked ~ span {
+        color: #46A358;
+        font-family: "Cera Pro Bold";
+        font-size: 15px;;
+    }
+    /*
+    CSS for custom chechboxes END
+    */
+
+    div.toolbar{
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    div.menu-two{
+        display: flex;
+        gap: 40px;
+        cursor: pointer;
+    }
+
+    li.menu-item-two{
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 15px;
+        padding: 0px 0px 7px;
+        border-bottom: 3px solid transparent;
+        list-style: none;
+    }
+    
+    li.menu-item-two.active{
+        font-family: "Cera Pro Bold";
+        font-size: 15px;
+        border-color: #46A358;
+    }
+
+    /*
+    Sorting items - select
+    */
+    div.sort, select.sorting{
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 15px; 
+    }
+
+    /*
+    Items
+    */
+    div.products{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        justify-content: space-between;
+        margin: 30px 120px 90px 50px;
+    }
+
+    div.product-card{
+        margin: 0px 37px 70px 0px;
+    }
+
+    div.product-card img{
+            width: 100%;
+
+             /* Fixed height for identity */
+            height: 250px;
+
+            object-fit: cover;
+    }
+
+    h3{
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 16px;
+    }
+
+    .price{
+        color: #46A358;
+        font-family: "Cera Pro Bold";
+        font-size: 18px;
+    }
+
+    div.page-nav{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+    }
+
+    div.page-nav button{
+        border-radius: 4px;
+        border: 1px solid #E5E5E5;
+        cursor: pointer;
+        color: #3D3D3D;
+        font-family: "Cera Pro Regular";
+        font-size: 18px;
+        padding: 9px 11px 9px;
+    }
+
+    .page-button.active{
+        background: #46A358;
+        color: #FFF;
+        font-family: "Cera Pro Bold";
+        font-size: 18px;
+        cursor: pointer;
     }
