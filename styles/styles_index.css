@@ -281,9 +281,6 @@ div.products{
     gap: 70px 37px;
 }
 
-div.product-card{
-}
-
 div.img-container{
     padding: 20px 4px;
     background: #fbfbfb;
@@ -333,4 +330,148 @@ div.page-nav button{
     font-family: "Cera Pro Bold";
     font-size: 18px;
     cursor: pointer;
+}
+
+/* homework008 */
+div.o-two{
+    margin-top: 94px;
+    display: flex;
+    justify-content: space-around;
+    gap: 28px;
+}
+
+div.o-two-card{
+    padding: 37px 35px 46px;
+    background: #FBFBFB;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    position: relative;
+}
+
+h4{
+    text-align: right;
+    width: 40%;
+    color: #3D3D3D;
+    font-family: "Cera Pro Black";
+    font-size: 18px; 
+    text-transform: uppercase;
+}
+
+div.o-two-card > p{
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    width: 60%;
+    text-align: right;
+    margin-top: 9px;
+}
+
+div.o-two-card > button{
+    padding: 11px 28px;
+    margin-top: 25px;
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 14px;
+    background-color: #46A358;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 6px;
+}
+
+div.o-two-card > img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 292px;
+}
+
+section.blog{
+    margin-top: 138px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header.header-blog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h5{
+    color: #3D3D3D;
+    text-align: center;
+    font-family: "Cera Pro Bold";
+    font-size: 30px;
+}
+
+header.header-blog > p{
+    margin-top: 15px;
+    color: #727272;
+    text-align: center;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+}
+
+div.card-blog{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 43px;
+}
+
+div.card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+img.img-blog{
+    height: 268px;
+}
+
+span.content-data{
+    margin-top: 9px;
+    color: #46A358;
+    font-family: 'Cera Pro Medium';
+    font-size: 14px;
+}
+
+h6{
+    margin-top: 4px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Bold";
+    font-size: 20px;
+    width: 50%;
+}
+
+p.content-review{
+    margin-top: 4px;
+    color: #727272;
+    font-family: "Cera Pro Regular";
+    font-size: 14px;
+    width: 65%;
+}
+
+button.button-content{
+    margin-top: 9px;
+    padding: 0;
+    color: #3D3D3D;
+    background: none;
+    font-family: "Cera Pro Medium";
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    border: none;
+    cursor: pointer;
+}
+
+button.button-content.active{
+    color: #46A358;
+}
+
+button.button-content.active > svg path{
+    fill: #46A358;
 }
