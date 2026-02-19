@@ -284,6 +284,56 @@ div.products{
 div.img-container{
     padding: 20px 4px;
     background: #fbfbfb;
+    position: relative;
+}
+
+/* homework 9 - position */
+div.product-card{
+    border-top: 1px solid transparent;
+}
+
+div.product-card:hover{
+    border-top: 1px solid #46A358;
+}
+
+div.product-card:hover .product-card-buttons{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* homework009 */
+.product-card-buttons{
+    position: absolute;
+    margin-bottom: 7px;
+    bottom: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+}
+
+.card-button{
+    border-radius: 4px;
+    background: #fff;
+    border: none;
+    height: 35px;
+}
+
+.card-button:hover svg path{
+    fill: green;
+}
+
+.discount-block{
+    position: absolute;
+    margin-top: 14px;
+    background: #46A358;
+    padding: 7px 9px;
+    color: #FFF;
+    font-family: "Cera Pro Medium";
+    font-size: 16px;
+    top: 0%;
+    left: 0;
 }
 
 div.product-card img{
@@ -304,6 +354,14 @@ h3{
     font-family: "Cera Pro Bold";
     font-size: 18px;
     margin-top: 6px;
+}
+
+.old-price{
+    margin-left: 16px;
+    color: #A5A5A5;
+    font-family: "Cera Pro Regular";
+    font-size: 18px;
+    text-decoration: line-through;
 }
 
 div.page-nav{
@@ -414,7 +472,6 @@ header.header-blog > p{
     font-family: "Cera Pro Regular";
     font-size: 14px;
 }
-
 div.card-blog{
     margin-top: 35px;
     display: flex;
@@ -426,14 +483,22 @@ div.card-blog{
 div.card-content{
     display: flex;
     flex-direction: column;
+    
 }
 
 img.img-blog{
-    height: 268px;
+    width: 268px;
+}
+
+div.card-content-text{
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    max-width: 268px;
+    padding: 9px 15px;
 }
 
 span.content-data{
-    margin-top: 9px;
     color: #46A358;
     font-family: 'Cera Pro Medium';
     font-size: 14px;
@@ -444,7 +509,6 @@ h6{
     color: #3D3D3D;
     font-family: "Cera Pro Bold";
     font-size: 20px;
-    width: 50%;
 }
 
 p.content-review{
@@ -452,7 +516,6 @@ p.content-review{
     color: #727272;
     font-family: "Cera Pro Regular";
     font-size: 14px;
-    width: 65%;
 }
 
 button.button-content{
