@@ -10,6 +10,8 @@ ExtraBold  - 800
 Black      - 900
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @font-face {
     font-family: 'Cera Pro Regular';
     src: url('../fonts/CeraPro-Regular.eot');
@@ -50,7 +52,6 @@ Black      - 900
         url('../fonts/CeraPro-Black.ttf') format('truetype');
 }
 
-
 div.container{
     padding: 30px 120px 20px;
     display: flex;
@@ -70,6 +71,7 @@ menu.menu{
 }
 
 li.menu-item{
+    position: relative;
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 16px;
@@ -78,9 +80,104 @@ li.menu-item{
     list-style: none;
 }
 
-li.menu-item.active{
+/* Invisible text to prevent content jump on hover. */
+.menu-item::before{
+    content: attr(data-text);
+    font-family: "Cera Pro Bold";
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
+
+li.menu-item:hover{
     font-family: "Cera Pro Bold";
     border-color: #46A358;
+}
+
+.menu-item-active:hover .sub-list{
+    display: block;
+}
+
+.sub-list{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    padding-top: 20px;
+    /* Set minimum width to prevent text jumping on hover */
+    min-width: 220px;
+    z-index: 1;
+}
+
+.sub-list-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: #3D3D3D;
+    font-family: "Encode Sans Expanded";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background: #EDF6EE;
+    padding: 8px 14px;
+    gap: 90px;
+}
+
+.sub-list-item:hover{
+    background: #1A712A;
+    color: #FFF;
+    font-family: "Encode Sans Expanded";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.sub-list-item:hover > svg path{
+    fill: #FFF;
+}
+
+.active-item:hover .sub-sub-list{
+    display: block;
+}
+
+.active-item:hover svg{
+    transform: rotate(180deg);
+}
+
+.sub-sub-list{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    list-style: none;
+    padding-top: 20px;
+    /* Set minimum width to prevent text jumping on hover */
+    min-width: 200px;
+    z-index: 3;
+}
+
+.sub-sub-list-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #3D3D3D;
+    font-family: "Encode Sans Expanded";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+    background: #EDF6EE;
+    padding: 8px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sub-sub-list-item:hover{
+    background: #1A712A;
+    color: #FFF;
+    font-weight: 700;
 }
 
 button.header-button{
@@ -218,7 +315,7 @@ div.checkbox-menu span{
     
 }
 
-.custom-checkbox input:checked ~ span {
+.custom-checkbox input:checked ~ span{
     color: #46A358;
     font-family: "Cera Pro Bold";
     font-size: 15px;;
