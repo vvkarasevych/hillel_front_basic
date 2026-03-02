@@ -47,13 +47,14 @@ Black      - 900
     display: flex;
    }
 
-   button{
+   .close-button{
     margin-top: 13px;
     margin-right: 13px;
     padding: 3px;
     background: #FFF;
     border: none;
     align-self: flex-end;
+    cursor: pointer;
    }
 
    .textline_enter{
@@ -71,27 +72,26 @@ Black      - 900
     }
     
 
-    header {
+    header{
         display: flex; 
         flex-direction: column; 
         align-items: center; 
         gap: 16px;
     }
 
-    h1 {
+    h1{
         font-size: 20px;
         color: #3D3D3D;
         font-family: 'Cera Pro Regular', sans-serif;
     }
 
-    main {
+    main{
         display: flex; 
         flex-direction: column; 
         align-items: center; 
-        gap: 16px;
     }
 
-    div.container {
+    div.container{
         width: 500px; 
         height: 656px;  
         display: flex; 
@@ -99,21 +99,21 @@ Black      - 900
         align-items: center;
     }
 
-    label {
+    label{
         display: flex; 
         flex-direction: column; 
         align-items: center; 
         gap: 16px;
     }
 
-    p {
+    p{
         color: #3D3D3D;
         font-size: 13px;
         font-family: "Cera Pro Regular";
         align-self: center;
     }
 
-    span {
+    span{
         color: #3D3D3D; 
     }
 
@@ -124,9 +124,20 @@ Black      - 900
 
     .google, .facebook{
         color: #727272;
-        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 7px;
         font-family: "Cera Pro Bold";
         font-size: 13px;
+    }
+
+    .google{
+        margin-top: 27px;
+    }
+
+    .facebook{
+        margin-top: 15px;
     }
 
     input, .google, .facebook {  
@@ -134,9 +145,30 @@ Black      - 900
         height: 40px;
     }
 
+input[placeholder="Username"] {
+    margin-top: 14px;
+}
+
+    .input-svg{
+        position: relative;
+    }
+
+    .svg-in-input{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: none;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+
     div.for-line{
         display: flex;
         flex-direction: column;
+        margin-top: 36px;
     }
 
     p.p-register{
@@ -155,11 +187,11 @@ Black      - 900
     .register {
         width: 300px;
         height: 45px;
+        margin-top: 41px;
         background: #46A358;
         color: #FFF;
-        font-family: "Cera Pro Regular";
+        font-family: "Cera Pro Bold";
         font-size: 16px;
-        padding: 14px 118px;
     }
 
     .textline_enter {
@@ -174,7 +206,7 @@ Black      - 900
     footer {
         margin-top: 40px;
         background: #46A358; 
-        width: 500px; 
+        width: 100%; 
         height: 10px;
     }
 

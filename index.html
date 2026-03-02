@@ -56,7 +56,7 @@
                 </li>
                 <li class="menu-item" data-text="Blogs">Blogs</li>
             </menu>
-            <button class="header-button">
+            <button class="header-button" id="login">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M18.1592 10.1006H8.125" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M15.7202 7.67059L18.1602 10.1006L15.7202 12.5306" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -83,7 +83,7 @@
             <aside class="left-side">
                 <div class="categories">
                     <h2>Categories</h2>
-            <!-- custom-checkbox -->
+                    <!-- custom-checkbox -->
                     <div class="checkbox-menu">
                         <label class="custom-checkbox">
                             <input type="checkbox"> <span class="cat-item"> House Plants</span>
@@ -122,7 +122,34 @@
                             <span class="count">(18)</span>
                         </label>
                     </div>
-            <!-- custom-checkbox end -->
+                </div>
+                <!-- custom-checkbox end -->
+                <!-- Range Price Start here! -->
+                 <div class="price-ranger">
+                    <h2>Price Range</h2>
+                    <input class="input-range" type="range" min="0" max="2000">
+                    <div class="price-display">
+                        Price: <span class="green-price">$39 — $1230</span>
+                    </div>
+                    <button class="button-filter">Filter</button>
+                 </div>
+                <!-- Range Price End here! -->
+                <div class="categories">
+                    <h2>Size</h2>
+                    <div class="checkbox-menu">
+                        <label class="custom-checkbox">
+                            <input type="checkbox"> <span class="cat-item"> Small</span>
+                            <span class="count">(119)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox"> <span class="cat-item"> Medium</span>
+                            <span class="count">(86)</span>
+                        </label>
+                        <label class="custom-checkbox">
+                            <input type="checkbox"> <span class="cat-item"> Large</span>
+                            <span class="count">(78)</span>
+                        </label>
+                    </div>
                 </div>
                 <img class="banner" src="./images/000superSaleBanner.png" alt="Super Sale Banner">
             </aside>
@@ -624,5 +651,22 @@
             </div>
         </footer>
     </div>
+    <div class="overlay-preloader" id="overlay-loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <p>Download...</p>
+        </div>
+    </div>
+<script>
+    document.getElementById("login").addEventListener("click", function(event) {
+  const loader = document.getElementById("overlay-loader");
+
+        loader.classList.add("active");
+
+        setTimeout(function() {
+            window.location.href = "./registration.html";
+        }, 2000);
+    });
+</script>
 </body>
 </html>

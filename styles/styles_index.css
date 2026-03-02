@@ -190,6 +190,7 @@ button.header-button{
     color: #FFFFFF;
     font-family: "Cera Pro Regular";
     border: none;
+    cursor: pointer;
 }
 
 main.main{
@@ -277,7 +278,43 @@ div.categories{
     padding: 14px 18px;
 }
 
-div.categories > h2{
+/* Trying to make price range */
+.price-ranger{
+    background: #fbfbfb;
+    padding: 14px 18px;
+}
+
+.input-range{
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+.price-display {
+    margin-top: 29px;
+    color: #3D3D3D;
+    font-family: "Cera Pro Regular";
+    font-size: 15px;
+}
+
+.green-price {
+    color: #46a358;
+    font-family: "Cera Pro Bold";
+    font-size: 15px;
+}
+
+.button-filter{
+    border: none;
+    padding: 8px 26px;
+    margin-top: 24px;
+    border-radius: 6px;
+    background: #46A358;
+    color: #FFF;
+    font-family: "Cera Pro Bold";
+    font-size: 16px;
+}
+
+h2{
     color: #3D3D3D;
     font-family: "Cera Pro Bold";
     font-size: 18px;
@@ -286,7 +323,6 @@ div.categories > h2{
 
 div.checkbox-menu{
     padding: 0 12px;
-    margin-bottom: 360px;
 }
 
 img.banner{
@@ -833,4 +869,46 @@ button.button-content.active > svg path{
     color: #3D3D3D;
     font-family: "Cera Pro Regular";
     font-size: 14px;
+}
+
+/* preloader? */
+
+.overlay-preloader {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.overlay-preloader.active {
+    display: flex;
+    opacity: 1;
+}
+
+.loader-content {
+    text-align: center;
+    font-family: "Cera Pro Bold";
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
