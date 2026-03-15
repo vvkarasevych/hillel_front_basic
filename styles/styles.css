@@ -1,231 +1,178 @@
-   /*
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-Thin       - 100
-ExtraLight - 200
-Light      - 300
-Regular    - 400
-Medium     - 500
-SemiBold   - 600
-Bold       - 700
-ExtraBold  - 800
-Black      - 900
-
-   */
-
-   
-   @font-face {
-        font-family: 'Cera Pro Regular';
-        src: url('../fonts/CeraPro-Regular.eot');
-        src: local('CeraPro-Regular'), local('CeraPro-Regular'),
-            url('../fonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/CeraPro-Regular.woff2') format('woff2'),
-            url('../fonts/CeraPro-Regular.woff') format('woff'),
-            url('../fonts/CeraPro-Regular.ttf') format('truetype');
-   }
-
-    @font-face {
-        font-family: 'Cera Pro Medium';
-        src: url('../fonts/CeraPro-Medium.eot');
-        src: local('CeraPro-Medium'), local('CeraPro-Medium'),
-            url('../fonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/CeraPro-Medium.woff2') format('woff2'),
-            url('../fonts/CeraPro-Medium.woff') format('woff'),
-            url('../fonts/CeraPro-Medium.ttf') format('truetype');
-   }
-
-       @font-face {
-        font-family: 'Cera Pro Bold';
-        src: url('../fonts/CeraPro-Bold.eot');
-        src: local('CeraPro-Bold'), local('CeraPro-Bold'),
-            url('../fonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
-            url('../fonts/CeraPro-Bold.woff2') format('woff2'),
-            url('../fonts/CeraPro-Bold.woff') format('woff'),
-            url('../fonts/CeraPro-Bold.ttf') format('truetype');
-   }
-
-   body{
+/* css language-switcher */
+.lang-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.lang-switcher {
     display: flex;
-   }
-
-   .close-button{
-    margin-top: 13px;
-    margin-right: 13px;
-    padding: 3px;
-    background: #FFF;
-    border: none;
-    align-self: flex-end;
+    align-items: center;
+}
+.lang-label {
+    display: inline-block;
+    padding: 5px 7px;
+    gap: 6px;
+    color: var(--Basic-White, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1px;
     cursor: pointer;
-   }
+    border-radius: 8px;
+    background-color: transparent;
+}
+.lang-input:checked + .lang-label {
+    background-color: #F0145A;
+    color: #FFFFFF;
+}
+/* css language-switcher */
 
-   .textline_enter{
-        color: #3D3D3D;
-        font-family: "Cera Pro Regular";
-        font-size: 13px;
-        align-self: flex-start;
-    }
-
-    input::placeholder{
-        color: #A5A5A5;
-        font-family: "Cera Pro Regular";
-        font-size: 14px;
-        padding: 12px 14px;
-    }
-    
-
-    header{
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        gap: 16px;
-    }
-
-    h1{
-        font-size: 20px;
-        color: #3D3D3D;
-        font-family: 'Cera Pro Regular', sans-serif;
-    }
-
-    main{
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-    }
-
-    div.container{
-        width: 500px; 
-        height: 656px;  
-        display: flex; 
-        flex-direction: column; 
-        align-items: center;
-    }
-
-    label{
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        gap: 16px;
-    }
-
-    p{
-        color: #3D3D3D;
-        font-size: 13px;
-        font-family: "Cera Pro Regular";
-        align-self: center;
-    }
-
-    span{
-        color: #3D3D3D; 
-    }
-
-    input, .register, .google, .facebook {
-        border-radius: 5px;
-        border: 1px solid #EAEAEA;
-    }
-
-    .google, .facebook{
-        color: #727272;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 7px;
-        font-family: "Cera Pro Bold";
-        font-size: 13px;
-    }
-
-    .google{
-        margin-top: 27px;
-    }
-
-    .facebook{
-        margin-top: 15px;
-    }
-
-    input, .google, .facebook {  
-        width: 300px;
-        height: 40px;
-    }
-
-input[placeholder="Username"] {
-    margin-top: 14px;
+.header, .menu-under-slogan, .grid-container{
+    background: var(--Main-Regular, #323264);
 }
 
-    .input-svg{
-        position: relative;
-    }
+.header-text-phone{
+    color: var(--Basic-White, #FFF);
+    text-align: right;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header-slogan-button{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.slogan{
+    color: var(--Basic-White, #FFF);
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 
-    .svg-in-input{
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        background: none;
-        border: none;
-        cursor: pointer;
+/* less 768 */
+@media (max-width: 768px){
+    .header{
+        flex-direction: column;
+        height: 600px;
+    }
+    .header-multi-menu{
+        display: flex;
+        padding: 10px 15px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+    .header-svg-point{
+        display: none;
+    }
+    .header-svg-facebook{
+        display: none;
+    }
+    .header-text-adress{
+        display: none;
+    }
+    .header-logo-menu{
+        display: flex;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        align-self: stretch;
+    }
+    .slogan{
+        margin-top: 129px;
+        width: 315px;
+    }
+    .button-under-slogan{
+        margin-top: 159px;
+    }
+    .menu-under-slogan{
+        display: flex;
+        padding-bottom: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+.menu-under-slogan-menu {
+        display: flex;
+        list-style: none;
+        padding: 0 30px;
+        margin: 0;
+        gap: 30px;
+        white-space: nowrap;
+    }
+    .divider {
+        margin-top: 30px;
+        height: 1px;
+        background: rgba(255, 255, 255, 0.30);
+        width: 315px;
+        align-self: center;
+    }
+    .menu-item{
+        color: var(--Grey-Text, #B3B3BA);
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    h2{
+        color: var(--Basic-White, #FFF);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-top: 30px;
+    }
+    .menu-under-slogan-text{
+       display: flex;
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        align-self: stretch; 
+    }
+    .menu-under-slogan-content{
+        color: var(--Basic-White, #FFF);
+        font-family: Montserrat;
+        font-size: 19px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px; /* 157.895% */
+    }
+    .grid-container{
+        display: flex;
+        padding: 0 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        align-self: stretch;
+    }
+    h3{
+        color: var(--Active-Regular, #24A3FF);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+    .h3-plus-svg{
         display: flex;
         align-items: center;
     }
+}
 
-    div.for-line{
-        display: flex;
-        flex-direction: column;
-        margin-top: 36px;
-    }
 
-    p.p-register{
-        background-color: #FFF;
-        padding: 0px 6px;
-    }
-
-    div.line{
-        border-bottom: 1px solid #EAEAEA;
-        width: 300px;
-        margin-top: -6px;
-        position: relative;
-        z-index: -1;
-    }
-
-    .register {
-        width: 300px;
-        height: 45px;
-        margin-top: 41px;
-        background: #46A358;
-        color: #FFF;
-        font-family: "Cera Pro Bold";
-        font-size: 16px;
-    }
-
-    .textline_enter {
-        font-size: 13px; 
-        margin-top: 40px;
-    }
-
-    .registercolor {
-        color: #46A358;
-    }
-
-    footer {
-        margin-top: 40px;
-        background: #46A358; 
-        width: 100%; 
-        height: 10px;
-    }
-
-    /*
-
-    *{} - не имеет веса = 00000
-Для всех элементов. Как правило, чтобы обнулить какие-то дефолтные стили браузера.
-
-Селекторы тэга p, селекторы псевдоэлементов ::placeholder - вес - 00001
-
-селектор класса .class, селектор псевдокласса :hover, селектор аттрибута [type = 'text'] - вес = 00010
-
-селектор айди #id - вес = 00100"
-Но айди в основном используются для взаимодействия с JavaScript.
-Через CSS - лучше не использовать.
-
-style attribute - указывется непосредственно на тэге - вес = 01000
-
-Правило !important - вес = 10000
-Много проблем с данным правилом. Не использовать.
-    
-    */
